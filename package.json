@@ -5,13 +5,13 @@
   "keywords": [
     "none"
   ],
-  "homepage": "https://github.com/gary-Shen/styled-components-presentation#readme",
+  "homepage": "https://github.com/gary-Shen/css-in-js-presentation#readme",
   "bugs": {
-    "url": "https://github.com/gary-Shen/styled-components-presentation/issues"
+    "url": "https://github.com/gary-Shen/css-in-js-presentation/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gary-Shen/styled-components-presentation.git"
+    "url": "git+https://github.com/gary-Shen/css-in-js-presentation.git"
   },
   "license": "ISC",
   "author": "gary-shen",
