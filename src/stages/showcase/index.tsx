@@ -33,18 +33,19 @@ export const Wrapper = styled.section\` // 标签模板字符串
   \`;`;
 
 const queue = [
-  <SyntaxHighlighter language="javascript" style={a11yDark} showLineNumbers>
+  <SyntaxHighlighter key={0} language="javascript" style={a11yDark} showLineNumbers>
     {exampleCode1}
   </SyntaxHighlighter>,
-  <SyntaxHighlighter language="javascript" style={a11yDark} showLineNumbers>
+  <SyntaxHighlighter key={1} language="javascript" style={a11yDark} showLineNumbers>
     {exampleCode2}
   </SyntaxHighlighter>,
   <iframe
+    key={2}
     frameBorder="0"
     style={{ width: '100%', height: '303px' }}
     src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1KbMenCP8gjnHJEKSSbE7YeheLjbvTbhv"
   />,
-].map((item, index) => React.cloneElement(item, { key: index }));
+];
 
 export default function Showcase() {
   return <Performer queue={queue} type="queuer" />;

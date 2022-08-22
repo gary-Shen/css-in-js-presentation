@@ -11,6 +11,7 @@ export const Wrapper = styled.section.withConfig({
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 
   ${({ theme }) => css`
     color: ${theme.color};

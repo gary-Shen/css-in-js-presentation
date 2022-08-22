@@ -5,17 +5,16 @@ import Performer from '../../components/Performer';
 const StyledIframe = styled.iframe`
   width: 80vw;
   border: 0;
-  height: 60vh;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 0 rgb(0 0 0 / 5%);
+  height: 498px;
+  border-radius: 0;
 `;
 
-export default function Trends() {
+export default function CanIUseCSSVariables() {
   return (
     <Performer
       queue={[
         <div key={1}>
-          <StyledIframe src="https://npmtrends.com/aphrodite-vs-emotion-vs-jss-vs-radium-vs-styled-components-vs-linaria" />
+          <StyledIframe src="https://caniuse.bitsofco.de/embed/index.html?feat=css-variables&amp;periods=future_1,current,past_1,past_2&amp;accessible-colours=false&amp;image-base=none" />
         </div>,
       ]}
       type="queuer"

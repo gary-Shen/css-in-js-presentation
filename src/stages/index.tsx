@@ -10,6 +10,8 @@ import Trends from './trends';
 import What from './what';
 import WhatIWant from './what-i-want';
 import Which from './which';
+import CssVariable from './bonus-css-variables-01';
+import CanIUseCSSVariables from './bonus-css-variables-02';
 
 interface RouterItem {
   path: string;
@@ -54,22 +56,32 @@ const stages: RouterItem[] = [
   {
     path: '/showcase',
     component: <Showcase />,
-    name: 'Practice',
+    name: 'Showcase',
   },
   {
     path: '/examples-ui-library',
     component: <UIExample />,
-    name: 'Practice',
+    name: 'UI library',
   },
   {
     path: '/examples-mode',
     component: <ModeExample />,
-    name: 'Practice',
+    name: 'examples mode',
+  },
+  {
+    path: '/css-variables',
+    component: <CssVariable />,
+    name: 'CSS Variables',
+  },
+  {
+    path: '/can-i-use-css-variables',
+    component: <CanIUseCSSVariables />,
+    name: 'can i use css variables',
   },
   {
     path: '/reference',
     component: <Reference />,
-    name: 'Practice',
+    name: 'Reference',
   },
 ];
 

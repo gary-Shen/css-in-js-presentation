@@ -26,8 +26,8 @@ export default function UIExample() {
     <ThemeProvider theme={theme}>
       <Wrapper
         queue={[
-          <h1>styled-components + polished</h1>,
-          <div>
+          <h1 key={0}>styled-components + polished</h1>,
+          <div key={1}>
             <Button color={buttonColor} size="small">
               Small Button
             </Button>

@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     src: url('src/assets/fonts/DancingScript/DancingScript-Regular.woff') format('woff');
   }
 
+  @font-face {
+    font-family: IBMPlexMono;
+    src: url('src/assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff2') format('woff2');
+  }
+
   ${({ theme }: { theme: ThemeObject }) => css`
     body {
       color: ${theme.color};
@@ -76,6 +81,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
+  pre {
+    font-family: 'IBMPlexMono';
+  }
+
+  code {
+    font-family: 'IBMPlexMono';
+  }
+
+  .linenumber {
+    color: rgba(255, 255, 255, 0.2)!important;
+    min-width: 1.25em!important;
+  }
 `;
 
 GlobalStyle.defaultProps = {
