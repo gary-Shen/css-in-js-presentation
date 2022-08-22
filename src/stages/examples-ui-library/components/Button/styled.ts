@@ -1,24 +1,10 @@
-import { darken, lighten, math, parseToRgb, transparentize } from 'polished';
+import { darken, lighten, math, transparentize } from 'polished';
 import styled, { css } from 'styled-components';
 
+import { isDark } from '../../../../utils/hsp';
 import defaultTheme from '../../theme';
 
 export const cls = 'prefix-button';
-
-function isDark(color: string) {
-  if (typeof color !== 'string') {
-    return null;
-  }
-
-  const realColor = parseToRgb(color);
-  const hsp = Math.sqrt(
-    0.299 * (realColor.red * realColor.red) +
-      0.587 * (realColor.green * realColor.green) +
-      0.114 * (realColor.blue * realColor.blue),
-  );
-
-  return hsp <= 140;
-}
 
 const StyledButton = styled.button`
   cursor: pointer;

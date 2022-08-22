@@ -46,5 +46,3 @@ export default function Button({
     </StyledButton>
   );
 }
-
-Button.toString = StyledButton.toString;

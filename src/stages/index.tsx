@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Difference from './difference';
+import ModeExample from './examples-mode';
 import UIExample from './examples-ui-library';
 import Progress from './progress';
 import Reference from './reference';
@@ -40,6 +42,11 @@ const stages: RouterItem[] = [
     name: 'Popular libraries',
   },
   {
+    path: '/difference',
+    component: <Difference />,
+    name: 'Difference',
+  },
+  {
     path: '/trends',
     component: <Trends />,
     name: 'Trends',
@@ -52,6 +59,11 @@ const stages: RouterItem[] = [
   {
     path: '/examples-ui-library',
     component: <UIExample />,
+    name: 'Practice',
+  },
+  {
+    path: '/examples-mode',
+    component: <ModeExample />,
     name: 'Practice',
   },
   {

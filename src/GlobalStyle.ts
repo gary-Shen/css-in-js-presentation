@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import { createGlobalStyle, css } from 'styled-components';
 
 import { ukraine } from './themes';
@@ -22,6 +23,29 @@ const GlobalStyle = createGlobalStyle`
     ::selection {
       color: #fff;
       background-color: ${theme.brand.cssTextColor};
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      color: ${theme.brand.cssTextColor};
+      text-decoration: none;
+
+      &:after {
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: ${theme.brand.cssTextColor};
+        content: ' ';
+      }
+
+      &:hover {
+        color: ${darken(0.1, theme.brand.cssTextColor)};
+
+        &:after {
+          background-color: ${darken(0.1, theme.brand.cssTextColor)};
+        }
+      }
     }
   `}
 
@@ -50,6 +74,8 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     margin-bottom: 0;
   }
+
+
 `;
 
 GlobalStyle.defaultProps = {

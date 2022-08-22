@@ -6,8 +6,11 @@ import StyledButton from './components/Button/styled';
 import theme from './theme';
 
 const Wrapper = styled(Performer)`
-  flex-direction: row;
   align-items: center;
+
+  h1 {
+    margin-bottom: 5rem;
+  }
 
   ${StyledButton} {
     margin-right: 1rem;
@@ -23,13 +26,16 @@ export default function UIExample() {
     <ThemeProvider theme={theme}>
       <Wrapper
         queue={[
-          <Button color={buttonColor} size="small">
-            Small Button
-          </Button>,
-          <Button color={buttonColor}>Regular Button</Button>,
-          <Button color={buttonColor} size="large">
-            Large Button
-          </Button>,
+          <h1>styled-components + polished</h1>,
+          <div>
+            <Button color={buttonColor} size="small">
+              Small Button
+            </Button>
+            <Button color={buttonColor}>Regular Button</Button>
+            <Button color={buttonColor} size="large">
+              Large Button
+            </Button>
+          </div>,
         ]}
         type="queuer"
       />
