@@ -29,11 +29,12 @@ export default function UIExample() {
           <h1 key={0}>styled-components + polished</h1>,
           <div key={1}>
             <Button color={buttonColor} size="small">
-              Small Button
+              Small
             </Button>
-            <Button color={buttonColor}>Regular Button</Button>
+            <Button color={buttonColor}>Regular</Button>
+            <Button disabled color={buttonColor}>Disabled</Button>
             <Button color={buttonColor} size="large">
-              Large Button
+              Large
             </Button>
           </div>,
         ]}

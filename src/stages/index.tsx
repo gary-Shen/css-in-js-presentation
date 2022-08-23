@@ -12,6 +12,9 @@ import WhatIWant from './what-i-want';
 import Which from './which';
 import CssVariable from './bonus-css-variables-01';
 import CanIUseCSSVariables from './bonus-css-variables-02';
+import StyledComponentsDiagram from './styled-components-diagram';
+import Question from './question';
+import Highlight from './highlight';
 
 interface RouterItem {
   path: string;
@@ -44,6 +47,16 @@ const stages: RouterItem[] = [
     name: 'Popular libraries',
   },
   {
+    path: '/showcase',
+    component: <Showcase />,
+    name: 'Showcase',
+  },
+  {
+    path: '/styled-components-diagram',
+    component: <StyledComponentsDiagram />,
+    name: 'styled-components diagram',
+  },
+  {
     path: '/difference',
     component: <Difference />,
     name: 'Difference',
@@ -52,11 +65,6 @@ const stages: RouterItem[] = [
     path: '/trends',
     component: <Trends />,
     name: 'Trends',
-  },
-  {
-    path: '/showcase',
-    component: <Showcase />,
-    name: 'Showcase',
   },
   {
     path: '/examples-ui-library',
@@ -69,6 +77,11 @@ const stages: RouterItem[] = [
     name: 'examples mode',
   },
   {
+    path: '/highlights',
+    component: <Highlight />,
+    name: 'Highlights',
+  },
+  {
     path: '/css-variables',
     component: <CssVariable />,
     name: 'CSS Variables',
@@ -77,6 +90,11 @@ const stages: RouterItem[] = [
     path: '/can-i-use-css-variables',
     component: <CanIUseCSSVariables />,
     name: 'can i use css variables',
+  },
+  {
+    path: '/questions',
+    component: <Question />,
+    name: 'Questions',
   },
   {
     path: '/reference',

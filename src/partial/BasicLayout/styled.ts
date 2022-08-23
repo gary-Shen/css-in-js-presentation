@@ -5,7 +5,7 @@ import { StyledTitle } from '../../components/Select/styled';
 import { ukraine } from '../../themes';
 
 export const Wrapper = styled.section.withConfig({
-  displayName: 'ThisIsCustomDisplayNameOfComponent',
+  // displayName: 'ThisIsCustomDisplayNameOfComponent',
   componentId: 'im-radom-id',
 })`
   height: 100vh;

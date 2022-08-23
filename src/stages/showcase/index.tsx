@@ -22,7 +22,7 @@ export const Wrapper = styled.section\` // 标签模板字符串
   display: flex;
   flex-direction: column;
 
-  \${Title} {
+  \${Title} { // 如果删除了BrandTitle模块，此模块将报错，提醒删除此处样式模块
     color: #666;
     font-size: 1.8rem;
 
@@ -39,12 +39,6 @@ const queue = [
   <SyntaxHighlighter key={1} language="javascript" style={a11yDark} showLineNumbers>
     {exampleCode2}
   </SyntaxHighlighter>,
-  <iframe
-    key={2}
-    frameBorder="0"
-    style={{ width: '100%', height: '303px' }}
-    src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1KbMenCP8gjnHJEKSSbE7YeheLjbvTbhv"
-  />,
 ];
 
 export default function Showcase() {

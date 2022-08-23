@@ -20,6 +20,11 @@ const GlobalStyle = createGlobalStyle`
     src: url('src/assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff2') format('woff2');
   }
 
+  @font-face {
+    font-family: IBMPlexMonoItalic;
+    src: url('src/assets/fonts/IBMPlexMono/IBMPlexMono-Italic.woff2') format('woff2');
+  }
+
   ${({ theme }: { theme: ThemeObject }) => css`
     body {
       color: ${theme.color};
@@ -92,6 +97,10 @@ const GlobalStyle = createGlobalStyle`
   .linenumber {
     color: rgba(255, 255, 255, 0.2)!important;
     min-width: 1.25em!important;
+  }
+
+  .imports, .module {
+    font-family: 'IBMPlexMonoItalic'
   }
 `;
 

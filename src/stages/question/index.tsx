@@ -1,10 +1,8 @@
 import Performer from '../../components/Performer';
 
-export default function Difference() {
+export default function Question() {
   return (
     <Performer
-      key={0}
-      type="queuer"
       queue={[
         <h1 key={1}>差异</h1>,
         <h4 key={2}>🚩 是否有 runtime</h4>,
@@ -12,6 +10,7 @@ export default function Difference() {
         <h4 key={4}>🚩 inline 或 css selector</h4>,
         <h5 key={3}>styled-components / emotion / jss 和 radium（已经不维护）</h5>,
       ]}
+      type="queuer"
     />
   );
 }

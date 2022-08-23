@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import Performer from '../../components/Performer';
 
 const StyledIframe = styled.iframe`
-  width: 80vw;
+  width: 500px;
   border: 0;
-  height: 60vh;
+  height: 420px;
   border-radius: 1rem;
   box-shadow: 0px 10px 0 rgb(0 0 0 / 5%);
 `;
 
-export default function Trends() {
+export default function StyledComponentsDiagram() {
   return (
     <Performer
       queue={[
         <div key={1}>
-          <StyledIframe src="https://npmtrends.com/aphrodite-vs-emotion-vs-jss-vs-radium-vs-styled-components-vs-linaria" />
+          <StyledIframe src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1KbMenCP8gjnHJEKSSbE7YeheLjbvTbhv" />
         </div>,
       ]}
       type="queuer"
