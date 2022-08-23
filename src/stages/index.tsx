@@ -15,6 +15,7 @@ import CanIUseCSSVariables from './bonus-css-variables-02';
 import StyledComponentsDiagram from './styled-components-diagram';
 import Question from './question';
 import Highlight from './highlight';
+import Conclusion from './conclusion';
 
 interface RouterItem {
   path: string;
@@ -47,6 +48,16 @@ const stages: RouterItem[] = [
     name: 'Popular libraries',
   },
   {
+    path: '/trends',
+    component: <Trends />,
+    name: 'Trends',
+  },
+  {
+    path: '/difference',
+    component: <Difference />,
+    name: 'Difference',
+  },
+  {
     path: '/showcase',
     component: <Showcase />,
     name: 'Showcase',
@@ -55,16 +66,6 @@ const stages: RouterItem[] = [
     path: '/styled-components-diagram',
     component: <StyledComponentsDiagram />,
     name: 'styled-components diagram',
-  },
-  {
-    path: '/difference',
-    component: <Difference />,
-    name: 'Difference',
-  },
-  {
-    path: '/trends',
-    component: <Trends />,
-    name: 'Trends',
   },
   {
     path: '/examples-ui-library',
@@ -95,6 +96,11 @@ const stages: RouterItem[] = [
     path: '/questions',
     component: <Question />,
     name: 'Questions',
+  },
+  {
+    path: '/conclusion',
+    component: <Conclusion />,
+    name: 'Conclusion',
   },
   {
     path: '/reference',
