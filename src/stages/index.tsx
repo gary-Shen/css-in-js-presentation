@@ -1,21 +1,20 @@
 import React from 'react';
 
+import CssVariable from './bonus-css-variables-01';
+import CanIUseCSSVariables from './bonus-css-variables-02';
 import Difference from './difference';
 import ModeExample from './examples-mode';
 import UIExample from './examples-ui-library';
+import Highlight from './highlight';
 import Progress from './progress';
+import Question from './question';
 import Reference from './reference';
 import Showcase from './showcase';
+import StyledComponentsDiagram from './styled-components-diagram';
 import Trends from './trends';
 import What from './what';
 import WhatIWant from './what-i-want';
 import Which from './which';
-import CssVariable from './bonus-css-variables-01';
-import CanIUseCSSVariables from './bonus-css-variables-02';
-import StyledComponentsDiagram from './styled-components-diagram';
-import Question from './question';
-import Highlight from './highlight';
-import Conclusion from './conclusion';
 
 interface RouterItem {
   path: string;
@@ -96,11 +95,6 @@ const stages: RouterItem[] = [
     path: '/questions',
     component: <Question />,
     name: 'Questions',
-  },
-  {
-    path: '/conclusion',
-    component: <Conclusion />,
-    name: 'Conclusion',
   },
   {
     path: '/reference',
